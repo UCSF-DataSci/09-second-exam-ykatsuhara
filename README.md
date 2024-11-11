@@ -2,12 +2,12 @@
 
 # Summary of the analyses and the results
 
-**Q1: Data Preparation with Command-Line Tools**
+## **Q1: Data Preparation with Command-Line Tools**
 
 - After cleaning the dataset by removing comment lines, empty lines, and extra commas, records within the specific walking speed range (2.0-8.0) were filtered. The cleaned data was saved as `ms_data.csv` with the columns: `patient_id`, `visit_date`, `age`, `education_level`, and `walking_speed`.
 - `insurance.lst` contains the types of insurance: `A`, `B`, and `C`.
 
-**Q2: Data Analysis with Python**
+## **Q2: Data Analysis with Python**
 
 - All patients added consistent insurance types across visits using `map()`.
 - We checked that there is no outlier using `describe()`.
@@ -29,7 +29,7 @@
         - Insurance C: 600
  
 
-**Q3: Statistical Analysis**
+## **Q3: Statistical Analysis**
 
 **Outlier Check**
 - Outliers were checked in Q2, with no significant outliers detected.
@@ -75,7 +75,7 @@
 - **Interaction between Insurance Type and Visit Cost**: A statistically significant association was found between the interaction of insurance type B and visit cost with walking speed. However, the impact was minimal, with a coefficient of 0.0014 (95% CI: 9.36e-05 - 0.003), suggesting a small effect.
 
 
-**Q4: Data Visualization**
+## **Q4: Data Visualization**
 **Walking speed analysis:**
 - **Scatter plot of age vs walking speed with regression line**
 ![Scatter plot](Figure_2.png)
@@ -91,7 +91,7 @@
 There are linear trends in age and education levels on walking speed, with higher education levels and younger ages generally associated with faster walking speeds.
 
 
-### Cost analysis:
+**Cost analysis:**
 - **Bar plot of mean costs by insurance type**
 ![Box plot](Figure_5.png)
 
@@ -103,7 +103,7 @@ There are linear trends in age and education levels on walking speed, with highe
 Insurance type C has the highest visit costs, while insurance type A has the lowest.
 
 
-### Combined visualizations:
+**Combined visualizations:**
 - **Pair plot of key variables**
 ![Pair plot](Figure_7.png)
 
